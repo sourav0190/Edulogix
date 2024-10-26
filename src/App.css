@@ -1,0 +1,104 @@
+/* App.css */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0c1b39; /* Dark blue background */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  position: relative; /* Ensure proper positioning for children */
+}
+
+.footer {
+  background-color: #f8f8f8; /* Light background for the footer */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #666;
+}
+
+.text-input input {
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.logo div {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #666;
+}
+
+.social-icons a:hover {
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2b3c; /* Darker navbar color */
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dropdown {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+  }
+  to {
+    opacity: 1; /* End fully opaque */
+  }
+}
+
+
+

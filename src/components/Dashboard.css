@@ -1,0 +1,46 @@
+/* src/components/Dashboard.css */
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: 2;
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  @media (min-width: 600px) { /* Medium screens */
+    .dashboard-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+  }
+  
+  @media (min-width: 900px) { /* Large screens */
+    .dashboard-container {
+      grid-template-columns: repeat(4, 1fr); /* Four columns */
+    }
+  }
+  
+  .dashboard-card {
+    padding: 16px; /* Adjust padding for better appearance */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Fixed height for cards */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, border 0.2s;
+  }
+  
+  .dashboard-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+  }
+  
+  .dashboard-card i {
+    font-size: 4rem; /* Adjust icon size if needed */
+    margin-bottom: 10px;
+  }
+  
